@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="minstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=sofia&effect=neon|outline|emboss|shadow-multiple" />
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="women.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <h1>meesho</h1>
+        <!--search bar-->
+        <div class="searchinplutcont">
+            <form action="" id=""inputform">
+                <input type="text" placeholder="Search for products, brands and more" />
+            </form>
+            <div class="inputclose">
+                <i class="fa fa-close"></i>
+            </div>
+            <div class="searchRecent">
+                <h3>Recent Search</h3>
+                <div class="listofRecent">
+                </div>
+            </div>
+            </div>
+        
+
+        <ul>
+            <li>
+                <div id="drop">
+                    <button class="dropbtn"><i class="fa fa-phone"></i>Download App</button>
+                    <div class="dropdown-content">
+                        <div class="row">
+                            <div class="column">
+                                <h2>Download Form</h2>
+                                <a href="" class="downbtn"><img src="https://images.meesho.com/images/pow/playstore-icon-big.png"/></a></br>
+                                <a href="" class="downbtn"><img src="https://images.meesho.com/images/pow/appstore-icon-big.png"/></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>Become a Supplier</li>
+            <li>Newsroom</li>
+            <li>
+                <div id="drop"><button class="dropbtn"><i class="fa fa-user"></i>Profile</button>
+                    <div class="dropdown-content">
+                        <div class="row">
+                            <div class="column">
+                                <p>Hello User</p>
+                                <button onclick="document.getElementById('id01').style.display='block'"><a href="signUp.html" target="_blank">signUp</a></button></br>
+
+                                <p>Delete Account</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li><i class="fa fa-car"></i> Cart</li>
+        </ul>
+        </br>
+        </br>
+        <hr>
+    </div>
+
+    <hr style="color: grey;">
+    <!---for phone-->
+    <div class="phoneheader">
+        <div class="show_items">
+            <select class="showItemslect">
+                <option>Women</option>
+                <option>Mens</option>
+                <option>kids</option>
+                <option>Electronics</option>
+                <option>Home</option>
+            </select>
+        </div>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn">Women Ethnic</button>
+        <div class="dropdown-content">
+            <div class="row">
+                <div class="column">
+                    <p>Sarees</p>
+                    <button>All Sarees</button></br>
+                    <button>Silk Sarees</button></br>
+                    <button>Cotton Sarees</button>
+                </div>
+                <div class="column">
+                    <p>Kurti</p>
+                    <button>All Kurti</button></br>
+                    <button>Anarkali Kurtis</button></br>
+                    <button>Embroidered Kurtis</button>
+                </div>
+
+                <div class="column">
+                    <p>Suits & Dress Material</p>
+                    <button>All Suits & Dress Materials</button></br>
+                    <button>Cotton Suits</button></br>
+                    <button>Embroidered Suits</button></br>
+                </div>
+                <div class="column">
+                    <p>Other Ethnic</p>
+                    <button>Lehange</button></br>
+                    <button>Gown</button></br>
+                    <button>Ethnic Bottomwear</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <button class="dropbtn">Women Western</button>
+        <div class="dropdown-content">
+            <div class="row">
+                <div class="column">
+                    <p>Topwear</p>
+                    <button>Tops</button></br>
+                    <button>Dresses</button></br>
+                    <button>Sweaters</button></br>
+                    <button>Jumpsuits</button>
+                </div>
+                <div class="column">
+                    <p>Bottomwear</p>
+                    <button>Jeans</button>
+                    </br><button>Jaggings</button>
+                    </br><button>Shorts</button>
+                    </br><button>Skirts</button>
+                </div>
+                <div class="column">
+                    <p>Innerwear</p>
+                    <button>Bra</button></br>
+                    <button>Briefs</button>
+                </div>
+                <div class="column">
+                    <p>Sleepwear</p>
+                    <button>Nightsuits</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <button class="dropbtn">Men</button>
+        <div class="dropdown-content">
+            <div class="row">
+                <div class="column">
+                    <p>Men Accessories</p>
+                    <button>All Men Accessorie</button>
+                    </br><button>Watches</button>
+                    </br><button>Belts</button>
+                    </br><button>Sunglasses</button>
+                    </br><button>Bags</button>
+                </div>
+                <div class="column">
+                    <p id="pid" style="font-weight: bold;">Top Wear</p>
+                    <button>All Top Wear</button></br>
+                    <button>Tshirts</button></br>
+                    <button>Shirts</button>
+                </div>
+                <div class="column">
+                    <p>Bottom Wear</p>
+                    <button>Track pants</button></br>
+                    <button>Jeans</button></br>
+                    <button>Trousers</button></br>
+                </div>
+                <div class="column">
+                    <p>Men Footwear</p>
+                    <button>Casual Shoes</button></br>
+                    <button>Sport Shoes</button>
+                    </br><button>Sandals</button>
+                    </br><button>Formal Shoes</button>
+                </div>
+
+                <div class="column">
+                    <p>Inner & Sleep Wear</p>
+                    <button>All Inner & Sleep Wear</button>
+                    </br><button>Vest</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <button class="dropbtn">Kids</button>
+        <div class="dropdown-content">
+            <div class="row">
+
+                <div class="column">
+                    <p>Infant 0-2 Years</p>
+                    <button>Rompers</button>
+                </div>
+                <div class="column">
+                    <p>Toys & Accessories</p>
+                    <button>Soft Toys</button></br>
+                    <button>Footwear</button></br>
+                    <button>Bags and Backpacks</button>
+                </div>
+                <div class="column">
+                    <p>Baby Care</p>
+                    <button>All Baby Care</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn">Home and Kitchen</button>
+        <div class="dropdown-content">
+            <div class="row">
+                <div class="column">
+                    <p>Home Furnishing</p>
+                    <button>BedSheets</button></br>
+                    <button>Curtains & Sheers</button></br>
+                    <button>Cusions & Cusions Covers</button>
+                </div>
+                <div class="column">
+                    <p>Home Decor</p>
+                    <button>All Home Decor</button></br>
+                    <button>Stickers</button></br>
+                    <button>Showpieces</button>
+                </div>
+                <div class="column">
+                    <p>Kitchen & Dining</p>
+                    <button>Kitchen Storage</button></br>
+                    <button>Cookware & Bakeware</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <button class="dropbtn">Beauty and Health</button>
+        <div class="dropdown-content">
+            <div class="row">
+                <div class="column">
+                    <p>Makeup</p>
+                    <button>Face</button>
+                    </br><button>Eyes</button>
+                    </br><button>Lips</button>
+                </div>
+                <div class="column">
+                    <p>Skincare</p>
+                    <button>Deodrant</button>
+                </div>
+                <div class="column">
+                    <p>Wellness</p>
+                    <button>Sanitizer</button></br>
+                    <button>Oral Care</button></br>
+                    <button>Feminine Hygiene</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <button class="dropbtn">Jwellery & Accessories</button>
+        <div class="dropdown-content">
+            <div class="row">
+                <div class="column">
+                    <p>Jwellery Set</p>
+                    <button>Earing</button>
+                    </br><button>Bangels</button>
+                    </br><button>Necklecs</button>
+                    </br><button>Rings</button>
+                    </br><button>Anklets</button>
+                </div>
+                <div class="column">
+                    <p>Women Accessories</p>
+                    <button>Bags</button></br>
+                    <button>Watches</button>
+                    </br><button>Hair Accessories</button>
+                    </br><button>Sunglasses</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn">Bags and Footwear</button>
+        <div class="dropdown-content">
+            <div class="row">
+                <div class="column">
+                    <p id="pid" style="font-weight: bold;">Women Bags</p>
+                    <button>All Women Bags</button>
+                    </br><button>Handbags</button>
+                    </br><button>Clutches</button>
+                </div>
+                <div class="column">
+                    <p>Men Footwear</p>
+                    <button>Sport Shoes</button></br>
+                    <button>Casual Shoes</button></br>
+                    <button>Formal Shoes</button></br>
+                    <button>Sandals</button></br>
+                </div>
+                <div class="column">
+                    <p>Women Footwear</p>
+                    <button>Flats</button></br>
+                    <button>Bellies</button>
+                    </br><button>Juttis</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn">Electronics</button>
+        <div class="dropdown-content">
+            <div class="row">
+                <div class="column">
+                    <p>Mobile Accessories</p>
+                    <button>All Mobile & Accessories</button>
+                    </br><button>Smartwatches</button>
+                    </br><button>Mobile Holders</button>
+                    </br><button>Mobile Cases and Covers</button>
+                </div>
+                <div class="column">
+                    <p>Appliances</p>
+                    <button>All Appliances</button></br>
+                    <button>Grooming</button>
+                    </br><button>Home Appliances</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr style="color:grey;">
+    </div>
+    <div class="roe">
+        <div class="col"></br>
+            <h1>Lowest prices</br> Best Quality Shopping</h1></br>
+            <p><i class="fa fa-truck"></i>  Free Delivery | <i class="fa fa-money"></i>  Cash on Delivery | <i class="fa-solid fa-bag-shopping"></i>  Easy Return</p>
+            </br>
+            <button></button>
+        </div>
+        <div class="col">
+            <img src="image/meimg.png" width="528" height="400" style="border-radius: 5px;" />
+        </div>
+    </div>
+    </br>
+    <div>
+        <p style="text-align: center; font-size: 50px; font-weight: bold; padding: 10px;">Top Categories To choose from
+        </p></br></br>
+        <div class="second">
+            <img src="image/img2.png"/>
+        </div>
+        </br>
+    </div>
+    </br>
+    <div>
+        <aside class="prodForYou">
+            <h2>Product For You</h2>
+            <div>
+                <button>sort by: Relevance</button>
+                <option>h</option>
+                <option>h</option>
+                <option>h</option>
+                <option>h</option>
+            </div>
+            <div>
+                <h2>Filters</h2>
+                <p>1000+Filters</p>
+                <hr>
+                <p>Category</p>
+                <input type="checkbox">
+                <p>Women T shirt</p>
+                <input type="checkbox">
+                <p>Women T shirt</p>
+                <input type="checkbox">
+                <p>Women T shirt</p>
+                <input type="checkbox">
+                <p>Women T shirt</p>
+                <input type="checkbox">
+                <p>Women T shirt</p>
+                <input type="checkbox">
+                <p>Women T shirt</p>
+                <input type="checkbox">
+                <p>Women T shirt</p>
+                <input type="checkbox">
+                <p>Women T shirt</p>
+                <input type="checkbox">
+                <p>Women T shirt</p>
+            </div>
+
+        </aside>
+    </div>
+    </br>
+    <hr>
+
+    
+    <div class="footer">
+        <div> More About Meesho
+            <hr>
+            <p>Meesho: Affordable online Shopping at your fingertips</p></br>
+            There are many benefits of shopping online. You can take your time and look at your different options to
+            find exactly what you want. It's easy to compare prices online and find exactly what</br>
+            you are looking for. And how with meesho, you can shop for anything you want at the lowest prices in the
+            market. Even if you want to shop for cool gifts for your friend and family there</br>
+            are many options that you can find on the Internet.
+            </br>
+            </br>
+            <p> A huge Selection of Product Across All Categories</p>
+            <p>We have a vast inventory of products ranging from apparel to cosmetics to home utility and kitchen
+                products and more. With over 50 lakh products and 650+ product categories.</br>
+                Meesho is sure to have everything you need. In our latest collections, you will find all the popular
+                items at an affordable price.</p>
+        </div>
+        <p>Mega Blockbuster Sale | Shop Now</p>
+        <p>Mega Blockbuster Sale</p>
+        <div>
+            <p>Home & Living></p>
+            <p>Curtains & Sheers | Round Cushions | Sofa Covers | Cotton BedSheets | Pillow Cover | Decorative Items |
+                Bean Bags |Face Towels </p>
+        </div>
+        <div>
+            <p>Women Western Wear</p>
+            <p>Women Frocks | Long Top Women | Tshirt Dresses | Designer Gown | Pencil Skirts | Women Trousers | Flared
+                Jeans | Fancy Ladies Sweaters </p>
+            <p>Jeggings | Body Shapers | Short Night Dress | Women Jackets | Women Thermal Sets | Khaftan</p>
+        </div>
+        <div>
+            <p>Electronics & Accessories</p>
+            <p>Android Smart Watches | Bluetooth Speaker | Bluetooth Earphones | Cctv Camera | Spy Camera | Diwali
+                Lightening | Microphones | Speakers</p>
+        </div>
+
+        <div>
+            <p>Men Footwear</p>
+            <p>Reebok sport Shoes | Men Sandals | Leather Loafers Men</p>
+        </div>
+        <div>
+            <p>Men Accessories</p>
+            <p>Leather Watches Men | Gold Jwellery Men | Hair Spray For Men | Men Keychains | Men Socks | Men Scarves |
+                Men Wrist Bands | Men Crossbody Bags | Men Shirt </p>
+        </div>
+        <div>
+            <p>Kids</p>
+            <p>Kids Lunch Boxes | Kids Ethnic Jackets | Kids Blazers | Rompers | Kids Kurti & Kurtas | Kids Salwar Suit
+                Sets | Kids Ethnic Gowns | Tshirt Boys | Girls Stylish Tops </p>
+        </div>
+        <div>
+            <p>Home & Kitchen</p>
+            <p>Toster | Mixer Grinder | Cookers | Juicer | Food Processors | Roti Maker | Sandwich Maker | Kettles |
+                Hand Blender | Table Cover</p>
+            <p>Kitchen Gloves | Racks & Holders | Spice Racks | Water Bottle | Thermal & Flask | Lunch Boxes | Ice Cream
+                Scoops | Funnels | Trivets | Chopper | Masher | Grater</p>
+            <p><button>Show More</button></p>
+        </div>
+        <div>
+            <p>Personal care and Wellness</p>
+            <p>Tummy Trimmer | Makeup Kits | Hai Color | Lip Balm | Nails Cutter | Soap | Hair Color | Oral Care |
+                Talcuim Powder | Face Streamer</p>
+        </div>
+    </div>
+    </div>
+    <script>
+
+    </script>
+</body>
+
+</html>
