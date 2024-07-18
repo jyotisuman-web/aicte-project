@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        input[type=text],
+        input[type=password],
+        input[type=email] {
+            width: 80%;
+            border-radius: 5px;
+            height: 20px;
+            padding: 5px 20px;
+            margin: 8px;
+        }
+
+        button {
+            background-color: rgb(218, 179, 220);
+            border-radius: 5px;
+            width: 60px;
+            padding: 2px 2px;
+            height: 1cm;
+            border: none;
+        }
+
+
+        /* opacity for transperency*/
+        button:hover {
+            opacity: 0.8;
+            box-shadow: 5px 5px 5px blueviolet;
+        }
+
+        .X_btn {
+            float: right;
+            width: 30px;
+            font-weight: bold;
+            font-size: 45px;
+            color: black;
+            margin-top: 0;
+            padding: 0;
+        }
+
+        .close:hover {
+            color: red;
+        }
+
+        .container {
+            padding: 16px;
+            display: inline-block;
+        }
+
+        span.pws {
+            float: right;
+            padding-top: 16px;
+        }
+
+        .modal {
+            /* hide the content and display after login btn is clicked*/
+            position: fixed;
+            /* stay in place*/
+            z-index: 1;
+            /* sit on the top*/
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            /* enable scroll if needed*/
+            background-color: rgba(0, 0, 0, 0, 0.4);
+            padding-top: 60px;
+            align-content: center;
+            background-color: rgb(188, 187, 187);
+
+        }
+
+        .modal-content {
+            margin: 5% auto 15% auto;
+            /*5% from the bottom and centered*/
+            border: 1px solid #888;
+            width: 25%;
+            box-shadow: 5px 5px 5px rgb(12, 3, 21);
+            background-color: rgb(184, 192, 119);
+            margin-left: 35%;
+        }
+
+        label {
+            margin-left: 130px;
+            font-weight: bold;
+        }
+
+        /*adding animation*/
+        .animate {
+            -webkit-animation: animatezoom 0.6s;
+            animation: animatezoom 0.6s;
+        }
+
+        @-webkit-keyframes animatezoom {
+            from {
+                -webkit-transform: scale(0)
+            }
+
+            to {
+                -webkit-transform: scale(1)
+            }
+        }
+
+        @keyframes animatezoom {
+            from {
+                transform: scale(0)
+            }
+
+            to {
+                transform: scale(1)
+            }
+        }
+
+        @media screen and (max-width:300px) {
+            span.psw {
+                display: block;
+                float: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="id01" class="modal">
+
+        <form class="modal-content animate">
+
+            <!--&times represents X-->
+            <div class="X_btn">
+                <a href="index.html"><span onclick="document.getElementById('id01').style.display='none'" class="close"
+                    title="Close Modal">&times;</span></a> 
+            </div>
+        </br>
+    </br>
+
+            <div class="container">
+                <label for="uname"><b>Username</b></label>
+                </br>
+                <!--required word to make it compulsory to enter data-->
+                <input type="text" placeholder="Enter Username" name="uname" required>
+
+                <label for="email"><b>Your Email</b></label>
+                </br>
+                <input type="email" placeholder="Enter Email" name="email" required>
+
+                <label for="psw"><b>Password</b></label>
+                </br>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+                <br>
+                <button type="submit" style="margin-left: 150px;"><a href="index.html"><b>Submit</b></a></button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
