@@ -1,0 +1,99 @@
+
+@media screen and (max-width:600px){
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    header {
+        visibility: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 45px;
+    }
+    .phoneheader{
+        visibility: visible;
+        margin-left: 0px;
+    }
+    .header ul li {
+        visibility: hidden;
+        width: 0px;
+        height: 0px;
+    }
+    
+    .header h1 {
+        margin-left: 4px;
+        padding: 0 10px;
+        color: rgb(66, 3, 57);
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .header input[type="text"] {
+        margin: 0 5px;
+        width:auto;
+        height: 30px;
+        border-radius: 5px;    
+    }
+    #drop {
+        visibility: hidden;
+    }
+    .dropdown-content {
+        visibility: hidden;
+        width: 0px;
+        height: 0px;
+    }
+    .dropdown{
+        visibility: hidden;
+        width: 0px;
+        height: 0px;
+    }
+    .dropdown-content{
+        visibility: hidden;
+        width: 0px;
+        height: 0px;
+    }
+    .header ul {
+        visibility: hidden;
+        width: 0px;
+    }
+    
+    .dropbtn{
+       visibility: hidden;
+    }
+    .footer{
+        visibility: hidden;
+    }
+    .col{
+        width: 90%;
+        margin-left: 15px;
+        margin-top: 10px;
+        display: block;
+        height: 200px;
+        padding: 0px;
+    }
+    .col button{
+        width:180px;
+        height: 25px;
+        margin-left: 25%;
+    }
+    .col img{
+        max-width:100%;
+        height: 200px;
+    }
+    .second img{
+        width: 80%;
+        height: 200px;
+    }
+    h1{
+        width: 100%;
+    }
+    .roe p{
+        font-size: 15px;
+        margin-left: 20px;
+    }
+    .roe h1{
+        font-size: 30px;
+    }
+    
+    
+}
