@@ -183,6 +183,66 @@
     border-color: rgb(68, 10, 130);
     box-shadow: 5px 5px 5px rgb(66, 3, 57);
 }
+
+#slidedown,span{
+    visibility: hidden;
+    width: 0%;
+}
+.secondInsideImg{
+    width: 100px;
+    height: 200px;
+    position:absolute;
+}
+.sellerbanner{
+    margin: 40px 0px;
+    position: relative;
+}
+.sellerbanner img{
+    width: 80%;
+    border-radius: 5px;
+}
+.seller_content{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    padding: 40px 0px;
+}
+.seller_content_content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.seller_appdownload{
+    position: relative;
+    width: 350px;
+    height: 80px;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 5px;
+}
+.seller_appdownload img{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+.seller_content_content h2{
+    color: rgb(85,133,248);
+    font-size: 30px;
+    margin-bottom: 0;
+    margin-right: 20px;
+}
+.seller_content_content h1{
+    color: var(--hoverTextColor);
+    font-size: 50px;
+    width: 60%;
+    text-align: right;
+}
+.seller_appdownload,.prodForYou p{
+    display: flex;
+}
+
+
 .prodForYou{
     float: left;
     width: 20%;
