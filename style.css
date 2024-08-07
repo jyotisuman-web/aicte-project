@@ -1,4 +1,10 @@
-
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
 /*for laptop*/
 .header {
     display: flex;
@@ -15,7 +21,7 @@
     text-shadow: 2px 2px 4px #7c53be;
 }
 .header input[type="text"] {
-    margin: 0 10px;
+    margin: 0px;
     width: 10cm;
     height: 30px;
     border-radius: 5px;
@@ -37,32 +43,8 @@
 .header ul li {
     margin: 0 40px;
 }
-.searchContainer{
-    position: relative;
-    display: flex;
-}
-.searchDisplay{
-    position: absolute;
-    width: 10cm;
-    bottom: 0;
-    left: 0;
-    top: 30px;
-    height: 300px;
-    background-color: rgb(129, 76, 7);
-    display: none;
-    border-radius: 5px;
-}
-.searchDisplay p{
-    padding: 0px 15px;
-    margin-top: 10px;
-}
-.searchContainer:focus-within .searchDisplay{
-    display: block;
-    box-shadow: 2px 2px 5px rgb(94, 92, 92);
-}
-.closesearch{
-    display: none;
-}
+
+
 #drop {
     position: relative;
     display: flex;
@@ -90,7 +72,7 @@
 
 }
 
-.row,.roe:after{
+.row,roe:after{
     width: auto;
     content:"";
     display: table;
@@ -135,7 +117,7 @@
 .col{
     width: 35%;
     height: 400px;
-    margin-left: 150px;
+    margin-left: 160px;
     margin-top: 50px;
     float: left;
     box-shadow: 2px 2px 2px 2px rgb(115, 107, 106);
@@ -172,84 +154,57 @@
     box-shadow: 5px 5px 5px rgb(71, 5, 71);
 }
 
-.second img{
-    width:80%;
-    height: 400px;
-    margin-left: 10%;
-    border-radius: 5px;
-    border: 2px solid black;
-}
-.second img:hover{
-    border-color: rgb(68, 10, 130);
-    box-shadow: 5px 5px 5px rgb(66, 3, 57);
-}
-
 #slidedown,span{
     visibility: hidden;
     width: 0%;
 }
-.secondInsideImg{
-    width: 100px;
-    height: 200px;
-    position:absolute;
+
+.main{
+    max-width: 1000px;
+    margin: auto;
 }
-.sellerbanner{
-    margin: 40px 0px;
-    position: relative;
-}
-.sellerbanner img{
-    width: 80%;
-    border-radius: 5px;
-}
-.seller_content{
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100%;
-    padding: 40px 0px;
-}
-.seller_content_content{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-}
-.seller_appdownload{
-    position: relative;
-    width: 350px;
-    height: 80px;
-    margin: 10px;
-    padding: 5px;
-    border-radius: 5px;
-}
-.seller_appdownload img{
-    width: 100%;
-    height: 100%;
-    background-color: black;
-}
-.seller_content_content h2{
-    color: rgb(85,133,248);
-    font-size: 30px;
-    margin-bottom: 0;
-    margin-right: 20px;
-}
-.seller_content_content h1{
-    color: var(--hoverTextColor);
+.myBtnContainer h1{
     font-size: 50px;
-    width: 60%;
-    text-align: right;
+    word-break: break-all;
 }
-.seller_appdownload,.prodForYou p{
-    display: flex;
+.rows{
+    margin: 8px -16px;
 }
-
-
-.prodForYou{
+.rows,.rows>.columns{
+    padding: 8px;
+}
+.columns{
     float: left;
-    width: 20%;
-    background-color: aquamarine;
+    width: 33.33%;
+    display: none;
 }
-.prodForYou p{
-    display: flex;
+.rows:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.content{
+    background-color: white;
+    padding: 10px;
+}
+.show{
+    display: block;
+}
+.btn{
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: white;
+    cursor: pointer;
+    margin: 30px;
+    border-radius: 5px solid black;
+}
+.btn:hover{
+    background-color: #847d83;
+}
+.btn.active{
+    background-color: #666;
+    color: white;
 }
 .footer{
     width: 100%;
